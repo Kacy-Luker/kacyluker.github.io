@@ -8,4 +8,4 @@ This repo contains the various versions of my personal portfolio website. I use 
 
 #### 2) Create a CNAME record
 1. Navigate to [DNS provider](https://www.dynu.com)
-2. Create a CNAME recorde that points to `https://kacy-luker.github.io/kacyluker.github.io/`
+2. Create a CNAME recorde that points to `kacy-luker.github.io`
