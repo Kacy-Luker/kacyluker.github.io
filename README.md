@@ -1,4 +1,4 @@
-# [kacyluker.github.io](https://kacy-luker.github.io/kacyluker.github.io/)
+# [kacyluker.github.io](https://www.kacyluker.com/)
 ## HTML Release
 
 ### How to deploy HTML Website to Github pages
