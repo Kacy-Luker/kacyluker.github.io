@@ -8,7 +8,7 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  color: #444444;
+  color: #272727;
 }
 
 a {
@@ -667,6 +667,10 @@ section {
   padding-bottom: 10px;
 }
 
+.resume .resume-item ul:last-child {
+  margin-bottom: 0;
+}
+
 .resume .resume-item:last-child {
   padding-bottom: 0;
 }
@@ -681,6 +685,42 @@ section {
   top: 0;
   background: #fff;
   border: 2px solid #82909c;
+}
+
+.resume .resume-item .collapsibleList {
+  color: #272727;
+  font-family: "Raleway", sans-serif;
+  cursor: pointer;
+  border: none;
+  text-align: left;
+  font-size: 16px;
+  background: #eef0f2;
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.resume .resume-item .active, .collapsibleList:hover {
+  background: #ffe3ab;
+}
+
+.resume .resume-item .collapsibleList:after {
+  content: '>';
+  font-weight: bold;
+  float: right;
+  margin-left: 10px;
+}
+
+.resume .resume-item .active:after {
+  content: "<";
+}
+
+.resume .resume-item .content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
 }
 
 /*--------------------------------------------------------------
@@ -861,7 +901,7 @@ section {
   line-height: 1;
   padding: 7px 10px;
   text-transform: uppercase;
-  color: #444444;
+  color: #272727;
   transition: all 0.3s ease-in-out;
   border: 2px solid #fff;
 }
@@ -1022,120 +1062,10 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Pricing
---------------------------------------------------------------*/
-.pricing .box {
-  padding: 20px;
-  background: #fff;
-  text-align: center;
-  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.12);
-  border-radius: 5px;
-  position: relative;
-  overflow: hidden;
-}
-
-.pricing h3 {
-  font-weight: 400;
-  margin: -20px -20px 20px -20px;
-  padding: 20px 15px;
-  font-size: 16px;
-  font-weight: 600;
-  color: #777777;
-  background: #f8f8f8;
-}
-
-.pricing h4 {
-  font-size: 36px;
-  color: #ffb727;
-  font-weight: 600;
-  font-family: "Open Sans", sans-serif;
-  margin-bottom: 20px;
-}
-
-.pricing h4 sup {
-  font-size: 20px;
-  top: -12px;
-  left: -3px;
-}
-
-.pricing h4 span {
-  color: #bababa;
-  font-size: 16px;
-  font-weight: 300;
-}
-
-.pricing ul {
-  padding: 0;
-  list-style: none;
-  color: #444444;
-  text-align: center;
-  line-height: 20px;
-  font-size: 14px;
-}
-
-.pricing ul li {
-  padding-bottom: 16px;
-}
-
-.pricing ul i {
-  color: #ffb727;
-  font-size: 18px;
-  padding-right: 4px;
-}
-
-.pricing ul .na {
-  color: #ccc;
-  text-decoration: line-through;
-}
-
-.pricing .btn-wrap {
-  margin: 20px -20px -20px -20px;
-  padding: 20px 15px;
-  background: #f8f8f8;
-  text-align: center;
-}
-
-.pricing .btn-buy {
-  background: #ffb727;
-  display: inline-block;
-  padding: 8px 35px;
-  border-radius: 4px;
-  color: #fff;
-  transition: none;
-  font-size: 14px;
-  font-weight: 400;
-  font-family: "Raleway", sans-serif;
-  font-weight: 600;
-  transition: 0.3s;
-}
-
-.pricing .btn-buy:hover {
-  background: #ffc85a;
-}
-
-.pricing .featured h3 {
-  color: #fff;
-  background: #ffb727;
-}
-
-.pricing .advanced {
-  width: 200px;
-  position: absolute;
-  top: 18px;
-  right: -68px;
-  transform: rotate(45deg);
-  z-index: 1;
-  font-size: 14px;
-  padding: 1px 0 3px 0;
-  background: #ffb727;
-  color: #fff;
-}
-
-/*--------------------------------------------------------------
 # Contact Me
 --------------------------------------------------------------*/
 .contact .info-box {
-  color: #444444;
+  color: #272727;
   text-align: center;
   box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
   padding: 20px 0 30px 0;
